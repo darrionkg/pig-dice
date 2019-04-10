@@ -1,0 +1,7 @@
+#twoPlayers, #playOrStop {
+  display: none;
+}
+
+#player2turn {
+  display: none;
+}

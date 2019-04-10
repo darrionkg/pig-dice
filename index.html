@@ -9,12 +9,14 @@
   </head>
   <body>
     <div class="container">
-      <div class="welcomeMenu">
+
+      <div id="welcomeMenu">
         <h1>Welcome to pig dice game!</h1>
         <button id="playerVsComputer" type="button" class="btn btn-success">Player vs Computer</button>
         <button id="playerVsPlayer" type="button" class="btn btn-success">Player vs Player</button>
       </div>
-      <div class="twoPlayers">
+
+      <div id="twoPlayers">
         <form id="pigDice">
           <div class="form-group">
             <label for="name1">Player One</label>
@@ -24,14 +26,20 @@
             <label for="name2">Player Two</label>
             <input id="name2" class="form-control" type="text">
           </div>
-          <button type="submit" class="btn btn-success">Start</button>
+          <button id="start"type="button" class="btn btn-success">Start</button>
           <br>
           <br>
         </form>
-        <div class="playOrStop">
-          <button id="rollButton" type="button" class="btn btn-success">Roll</button>
-          <button id="stop" type="button" class="btn btn-danger">Stop</button>
-        </div>
+      </div>
+
+      <div id="playOrStop">
+        <h1 id="player1turn"> <span class="player1name"></span>'s turn!' </h1>
+        <h1 id="player2turn"> <span class="player2name"></span>'s turn!' </h1>
+        <button id="rollButton" type="button" class="btn btn-success">Roll</button>
+        <button id="stop" type="button" class="btn btn-danger">Stop</button>
+        <h3>Round Score: <span id="showRoundTotal"></span></h3>
+        <h3> <span class="player1name"></span>'s Score: <span id="player1Total"></span> </h3>
+        <h3> <span class="player2name"></span>'s Score: <span id="player2Total"></span> </h3>
       </div>
     </div>
   </body>
